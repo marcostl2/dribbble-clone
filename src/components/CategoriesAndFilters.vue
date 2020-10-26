@@ -123,6 +123,6 @@ export default {
   color: #6e6d7a !important;
 }
 .overflow {
-  overflow-y: scroll;
+  overflow: scroll;
 }
 </style>
