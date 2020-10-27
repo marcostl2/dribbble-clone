@@ -2,7 +2,7 @@
   <v-container fluid class="pa-0">
     <NavBar />
     <CategoriesAndFilters />
-    <v-layout class="pa-0 px-12" column>
+    <v-layout class="pa-0 px-6 px-md-12" column>
       <v-layout>
         <v-row class="d-flex flex-column justify-center">
           <p class="text-h4 text-center font-weight-bold" style="color:#333">

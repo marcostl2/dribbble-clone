@@ -30,7 +30,10 @@
         ></v-select>
       </v-flex>
       <v-flex
-        :class="[$vuetify.breakpoint.sm ? 'overflow' : '', 'd-flex nowrap']"
+        :class="[
+          $vuetify.breakpoint.smAndDown ? 'overflow' : '',
+          'd-flex nowrap',
+        ]"
       >
         <v-btn small depressed>All</v-btn>
         <v-btn text small>Animation</v-btn>
@@ -49,9 +52,9 @@
       </v-flex>
     </v-layout>
     <v-expand-transition>
-      <v-layout bottom v-show="!hidden">
-        <v-flex class="pr-8">
-          <span>Tags</span>
+      <v-layout bottom class="d-flex flex-column flex-md-row" v-if="!hidden">
+        <v-flex class="pr-md-8" xs12>
+          <strong>Tags</strong>
           <v-text-field
             prepend-inner-icon="mdi-magnify"
             dense
@@ -63,8 +66,8 @@
             style="border-radius:10px;box-shadow:none !important"
           ></v-text-field>
         </v-flex>
-        <v-flex class="pr-8">
-          <span>Color</span>
+        <v-flex class="mt-4 mt-md-0 pr-md-8">
+          <strong>Color</strong>
           <v-text-field
             prepend-inner-icon="mdi-palette"
             dense
@@ -77,23 +80,25 @@
           >
           </v-text-field>
         </v-flex>
-        <v-flex class="pr-8">
-          <span>Made With</span>
+        <v-flex class="mt-4 mt-md-0 pr-md-8">
+          <strong>Made With</strong>
           <v-select
             dense
             append-icon="mdi-chevron-down"
             label="All Apps"
             outlined
+            hide-details
             :items="items"
           ></v-select>
         </v-flex>
-        <v-flex>
-          <span>Downloads</span>
+        <v-flex class="mt-4 mt-md-0 mb-6 mb-md-0">
+          <strong>Downloads</strong>
           <v-select
             dense
             append-icon="mdi-chevron-down"
             label="All Shots"
             outlined
+            hide-details
             :items="items"
           ></v-select>
         </v-flex>

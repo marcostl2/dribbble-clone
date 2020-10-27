@@ -20,4 +20,10 @@ export default {
 * {
   box-sizing: border-box;
 }
+.v-application {
+  overflow: hidden;
+}
+.theme--light.v-text-field--outline > .v-input__control > .v-input__slot {
+  border: 1px solid !important;
+}
 </style>
