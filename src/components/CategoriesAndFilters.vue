@@ -52,8 +52,12 @@
       </v-flex>
     </v-layout>
     <v-expand-transition>
-      <v-layout bottom class="d-flex flex-column flex-md-row" v-if="!hidden">
-        <v-flex class="pr-md-8" xs12>
+      <v-layout
+        bottom
+        class="d-flex flex-column flex-md-row mb-6"
+        v-if="!hidden"
+      >
+        <v-flex class="pr-md-8">
           <strong>Tags</strong>
           <v-text-field
             prepend-inner-icon="mdi-magnify"

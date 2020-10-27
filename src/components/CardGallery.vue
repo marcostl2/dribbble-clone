@@ -2,7 +2,7 @@
   <v-col cols="12" sm="6" md="3">
     <v-card elevation="0">
       <v-hover v-slot="{ hover }">
-        <v-img src="https://picsum.photos/270/200">
+        <v-img src="https://picsum.photos/270/200?random=1">
           <div
             v-if="hover"
             :class="[{ 'on-hover': hover }, 'px-4 d-flex align-end pb-4']"
